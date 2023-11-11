@@ -1,0 +1,8 @@
+.profile {
+    width: 100px; /* adjust as per your need */
+    height: 100px; /* adjust as per your need */
+    object-fit: cover; /* this will ensure that your images cover the box fully without distorting the image proportions */
+    border-radius: 50%; /* this will make the image round */
+    /* additional styles as per your need */
+  }
+  
