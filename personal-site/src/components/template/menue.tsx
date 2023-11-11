@@ -1,4 +1,5 @@
 import React, { Suspense, lazy, useState } from 'react';
+import styles from '../../static/css/layout/menu.module.css';
 
 import { Link } from 'react-router-dom';
 import routes from '../../data/routes';
@@ -8,7 +9,7 @@ import { slide as Menu } from 'react-burger-menu';
 const Hamburger = () => {
     const [open, setOpen] = useState(false);
     return (
-        <div className="hamburger-container">
+        <div className={styles.hambuger}>
         <nav className="main" id="hambuger-nav">
             <ul>
                 {open ? (

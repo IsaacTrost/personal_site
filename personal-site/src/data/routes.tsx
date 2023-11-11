@@ -8,7 +8,7 @@ interface route {
 const routes: route[] = [
     {
       index: true,
-      label: "Michael D'Angelo",
+      label: "asdfasdfd",
       path: '/',
     },
     {

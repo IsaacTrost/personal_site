@@ -1,0 +1,20 @@
+/* FILEPATH: /home/wisaac/personal_projects/personal_site/personal-site/src/static/css/layout/menu.module.css */
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+}
+
+/* Media query for screens narrower than it is tall */
+@media (max-width: 768px) {
+  /* Show hamburger menu */
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 9999;
+    cursor: pointer;
+  }
+}

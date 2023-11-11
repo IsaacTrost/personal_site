@@ -1,39 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-//import ContactIcons from '../Contact/ContactIcons';
-
+import styles from '../../static/css/layout/sidebar.module.css';
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
 const SideBar = () => (
-  <section id="sidebar">
+  <section id="sidebar" className={styles.sidebar}>
     <section id="intro">
-      <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
-      </Link>
+      <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" className = {styles.image}/>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
+        <h2>William Isaac Trost</h2>
         <p><a href="mailto:wisaactrost@gmail.com">wisaactrost@gmail.com</a></p>
       </header>
     </section>
 
-    <section className="blurb">
+    <section id="blurb" className={styles.blurb}>
       <h2>About</h2>
-      <p>Hi, I&apos;m Michael. I am a <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC Alumni,
-        and the VP of Engineering at <a href="https://smileidentity.com">Smile Identity</a>. Previously,
-        I was the co-founder and CTO of <a href="https://arthena.com">Arthena</a>
-        , co-founder of <a href="https://matroid.com">Matroid</a>, and worked at
-        {' '}<a href="https://planet.com">Planet</a> and <a href="https://facebook.com">Facebook</a>.
+      <p>Hi, I am Isaac. I am a computer science and economics double major at NC State University.
+        I am a passionate learner, and I am always excited to discover something new!
       </p>
       <ul className="actions">
-        <li>
           {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
-        </li>
       </ul>
     </section>
 
-    <section id="footer">
-      <p className="copyright">&copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.</p>
+    <section id = "footer" className={styles.footer}>
+      <p className="copyright">&copy; William Isaac Trost <Link to="/">IsaacTrost.com</Link>.</p>
     </section>
   </section>
 );

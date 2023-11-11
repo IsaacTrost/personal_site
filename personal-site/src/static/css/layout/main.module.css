@@ -1,0 +1,7 @@
+.wrapper {
+    display: flex; /* or flex, if you prefer */
+    flex-direction: column; /* makes sure children (header and main-content) are stacked vertically */
+    min-height: 100vh; /* makes sure the wrapper is at least as tall as the viewport */
+    background-color: black;
+
+}
